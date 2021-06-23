@@ -26,6 +26,7 @@ export function AuthContextProvider(props: AuthContextProviderProps){
 
   
     useEffect(() => {
+      
       //Evento listener, que monitora caso um usuário esteja logado anteriormente, 
       // para retornar os dados do usuário
       const unsubscribe = auth.onAuthStateChanged(user => {
