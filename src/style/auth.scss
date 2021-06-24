@@ -47,12 +47,16 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        max-width: 520px;
+        max-width: 720px;
         /* Faz com que todos os elementos estiquem para se ajustarem com a largura total, em relação ao
         container*/   
-        align-items: center; 
+        align-items: stretch; 
         text-align: center;
 
+        >div{
+            align-self: center;
+            width: 60%;
+        }
         > img{
             align-self: center;
         }
@@ -101,6 +105,8 @@
         font-weight: 500;
         background: #ea4335;
         color: #fff;
+
+        width: 100%;
 
         display: flex;
         justify-content: center;
