@@ -38,7 +38,7 @@ export function useRoom(roomId: string){
     useEffect(() => {
         const roomRef = database.ref(`rooms/${roomId}`)
 
-        // Escuta o evento apenas uma vez "once"
+        // Escuta o evento de novas perguntas
         roomRef.on('value', room => {
 
             const databaseRoom = room.val()
